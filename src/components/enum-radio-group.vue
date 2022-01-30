@@ -22,9 +22,9 @@ function onChange(val: number) {
 </script>
 
 <template>
-    <n-radio-group v-model:value="selected" @update:value="onChange">
-        <template v-for="item in options" :key="item">
-            <n-radio v-if="typeof item === 'number'" :value="item">{{ options[item] }}</n-radio>
+    <n-radio-group v-model:value="selected" v-bind="$attrs" @update:value="onChange">
+        <template v-for="it in options" :key="it">
+            <n-radio v-if="typeof it === 'number'" :value="it">{{ options[it] }}</n-radio>
         </template>
     </n-radio-group>
 </template>

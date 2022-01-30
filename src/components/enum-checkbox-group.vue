@@ -22,9 +22,9 @@ function onChange(val: number[]) {
 </script>
 
 <template>
-    <n-checkbox-group v-model:value="selected" @update:value="onChange">
-        <template v-for="item in options" :key="item">
-            <n-checkbox v-if="typeof item === 'number'" :value="item" :label="options[item]" />
+    <n-checkbox-group v-model:value="selected" v-bind="$attrs" @update:value="onChange">
+        <template v-for="it in options" :key="it">
+            <n-checkbox v-if="typeof it === 'number'" :value="it" :label="options[it]" />
         </template>
     </n-checkbox-group>
 </template>
