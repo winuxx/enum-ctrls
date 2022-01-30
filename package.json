@@ -1,0 +1,10 @@
+{
+    "name": "enum-options",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+        "@vueuse/core": "^7.5.3",
+        "naive-ui": "^2.21.5",
+        "vue": "^3.2.26"
+    }
+}
